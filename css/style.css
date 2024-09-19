@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "Revalia-Regular-a";
+  src: url(../font/Revalia-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto-Regular-a";
+  src: url(../font/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+body {
+  color: #000;
+  font-family: "Roboto-Regular-a";
+}
+
+:root {
+  --color-main: #34547A;
+  --color-gray: #C4C4C4;
+  --coor-text-main: #727272;
+  --color-text: #FFF;
+  --color-bgc: #EEEFF1;
+
+  --index: calc(1vw + 1vh);
+  --content-contaier: 57.8vw;
+  --font-width-small: .83vw;
+  --font-width-title: 1.66vw;
+  --font-width-average: 1.09vw;
+  --trans-time: .5s;
+}
+
+
+/* Мульти-блоки */
+.main-container {
+  margin-inline: auto;
+  max-width: var(--content-contaier);
+}
+
+.text-style-main {
+  font-weight: 400;
+  line-height: 164.063%;
+  font-size: var(--font-width-small);
+  font-style: normal;
+  color: var(--coor-text-main);
+}
+
+.title-style-main {
+  font-size: 1.66vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+/* Шапка */
+.header {
+  padding-top: 2.70vw;
+  padding-bottom: 7.60vw;
+  background-color: var(--color-bgc);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20.8vw;
+}
+
+.header__logo {
+  font-weight: 400;
+  font-size: 2.5vw;
+  font-family: "Revalia-Regular-a";
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--color-main);
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 2.18vw;
+  letter-spacing: .1vw;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+.header__list-item:first-child {
+  color: var(--color-main);
+  font-weight: 600;
+}
+
+.header__list-link {
+  color: inherit;
+  transition: var(--trans-time) ease-in-out;
+}
+
+.header__list-link:hover {
+  text-shadow: 0 0 .26vw var(--color-main);
+}
+
+.header__content {
+  margin-top: 6.77vw;
+  display: flex;
+  align-items: center;
+  gap: 7.44vw;
+}
+
+.header__img {
+  min-width: 22.6vw;
+  padding-left: 4.16vw;
+}
+
+.header__container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.08vw;
+
+}
+
+.header__title {
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 164.063%;
+  /* 78.75px */
+}
+
+.header__p {
+  min-width: 28.1vw;
+}
+
+.header__bnt {
+  padding: 1.30vw 0;
+  min-width: 11.7vw;
+  background-color: var(--color-main);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-text);
+  transition: var(--trans-time) ease-in-out;
+}
+
+.header__bnt:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 1.04vw var(--color-main);
+}
+
+
+/* Обо мне */
+.about {
+  padding: 5.72vw 0 4.94vw;
+  text-align: center;
+}
+
+.about__wrapper {
+  margin-inline: auto;
+  max-width: 28.12vw;
+}
+
+.about__title {
+  margin-bottom: 2.08vw;
+}
+
+.about__text {}
+
+
+/* Мои проекты */
+.projects {
+  padding: 5.20vw 0;
+  background-color: var(--color-main);
+}
+
+.projects__container {
+  display: flex;
+  gap: 2.5vw;
+}
+
+.projects__card {
+  display: flex;
+  gap: 1.04vw;
+}
+
+.projects__icon {
+  min-width: 2.60vw;
+  aspect-ratio: 1;
+}
+
+.projects__text-container {}
+
+.projects__title {
+  color: var(--color-text);
+  font-size: var(--font-width-average);
+}
+
+.projects__text {
+  color: var(--color-text);
+}
+
+
+/* Навыки атвора */
+.skills {
+  padding: 5.20vw 0;
+}
+
+.skills__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills__progress {
+  text-align: start;
+}
+
+.skills__title {
+  margin-bottom: 2.60vw;
+}
+
+.skills__liner-box {}
+
+.skills__liner-box:not(:last-child) {
+  margin-bottom: 1.56vw;
+}
+
+.skills__text {
+  margin-bottom: 1.04vw;
+}
+
+.skills__liner {
+  min-width: 23.1vw;
+  background-color: var(--color-gray);
+}
+
+.skills__liner-inner {
+  max-width: 18.2vw;
+  min-height: .20vw;
+  background-color: var(--color-main);
+}
+
+.skils__img {
+  min-width: 28.9vw;
+  min-height: 23.4vw;
+  background: url(../img/skills-img.jpg)no-repeat center/cover;
+}
+
+
+/* Презентация */
+.video-presentation {
+  padding: 100px 0;
+  background-color: var(--color-bgc);
+}
+
+.video-presentation__container {
+  text-align: center;
+}
+
+.video-presentation__title {
+  margin-bottom: 45px;
+}
+
+.video-presentation__text {
+  margin-inline: auto;
+  margin-bottom: 45px;
+  max-width: 540px;
+}
+
+.video-presentation__img {
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper::before {
+  content: url(../icon/play-button.svg);
+  position: absolute;
+  z-index: 1;
+  min-width: 100px;
+  aspect-ratio: 1;
+}
