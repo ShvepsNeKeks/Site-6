@@ -36,7 +36,8 @@ ul, ul li {
 }
 
 img {
-  vertical-align: top;
+  /* vertical-align: top; */
+  display: block;
 }
 
 img, svg {

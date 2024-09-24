@@ -18,7 +18,7 @@ body {
 :root {
   --color-main: #34547A;
   --color-gray: #C4C4C4;
-  --coor-text-main: #727272;
+  --color-text-main: #727272;
   --color-text: #FFF;
   --color-bgc: #EEEFF1;
 
@@ -42,7 +42,7 @@ body {
   line-height: 164.063%;
   font-size: var(--font-width-small);
   font-style: normal;
-  color: var(--coor-text-main);
+  color: var(--color-text-main);
 }
 
 .title-style-main {
@@ -238,7 +238,7 @@ body {
   background-color: var(--color-main);
 }
 
-.skils__img {
+.skills__img {
   min-width: 28.9vw;
   min-height: 23.4vw;
   background: url(../img/skills-img.jpg)no-repeat center/cover;
@@ -247,7 +247,7 @@ body {
 
 /* Презентация */
 .video-presentation {
-  padding: 100px 0;
+  padding: 5.20vw 0;
   background-color: var(--color-bgc);
 }
 
@@ -256,29 +256,75 @@ body {
 }
 
 .video-presentation__title {
-  margin-bottom: 45px;
+  margin-bottom: 2.34vw;
 }
 
 .video-presentation__text {
   margin-inline: auto;
-  margin-bottom: 45px;
-  max-width: 540px;
+  margin-bottom: 2.34vw;
+  max-width: 28.1vw;
 }
 
-.video-presentation__img {
+.video-presentation__wrapper-img {
   position: relative;
 }
 
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.video-presentation__img {
+  min-width: 100%;
 }
 
-.wrapper::before {
-  content: url(../icon/play-button.svg);
+.video-presentation__icon {
   position: absolute;
-  z-index: 1;
-  min-width: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 5.20vw;
+}
+
+
+/* Портфолио */
+.portfolio {
+}
+
+.portfolio__container-1,.portfolio__container-2 {
+  display: flex;
+}
+.portfolio__card {
+  position: relative;
+  min-width: 25vw;
   aspect-ratio: 1;
+}
+
+.portfolio__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #34547A;
+  opacity: 0;
+  transition: var(--trans-time);
+}
+
+.portfolio__icon {
+  min-width: 5.20vw;
+}
+
+.portfolio__icon-wrapper:hover {
+  opacity: .8;
+} 
+
+.portfolio_card_bgc-1:nth-child(odd){
+  background: url(../img/portfolio-bgc-1.png)no-repeat center/cover;
+}
+
+.portfolio_card_bgc-1:nth-child(even) {
+  background: url(../img/portfolio-bgc-2.png)no-repeat center/cover;
+}
+
+.portfolio_card_bgc-2:nth-child(odd) {
+  background: url(../img/portfolio-bgc-2.png)no-repeat center/cover;
+}
+
+.portfolio_card_bgc-2:nth-child(even) {
+  background: url(../img/portfolio-bgc-1.png)no-repeat center/cover;
 }
