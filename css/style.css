@@ -306,7 +306,7 @@ body {
 }
 
 .portfolio__icon {
-  min-width: 5.20vw;
+  max-width: 5.20vw;
 }
 
 .portfolio__icon-wrapper:hover {
