@@ -267,10 +267,8 @@ body {
 
 .video-presentation__wrapper-img {
   position: relative;
-}
-
-.video-presentation__img {
-  min-width: 100%;
+  min-height: 31.2vw;
+  background: url(../img/pre-img.png)no-repeat center/cover;
 }
 
 .video-presentation__icon {
@@ -278,7 +276,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  max-width: 5.20vw;
+  min-width: 5.20vw;
 }
 
 
